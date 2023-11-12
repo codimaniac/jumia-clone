@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
+import SubsidiariesNav from './components/SubsidiariesNav'
 import TopStripAdsDesktop from './components/TopStripAdsDesktop'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <TopStripAdsDesktop />
+      <SubsidiariesNav />
     </>
   )
 }
