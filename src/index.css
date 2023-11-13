@@ -1,4 +1,5 @@
 @import "../node_modules/@flaticon/flaticon-uicons/css/all/all";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +9,16 @@
     @apply flex justify-between w-24 text-xs text-[#f68b1e] hover:underline font-medium;
   }
   .jumia-subsidiary-links {
-    @apply inline-flex w-1/4 justify-between m-auto
+    @apply inline-flex w-1/4 justify-between m-auto;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .nav-dropdown-btn {
+    @apply flex justify-between hover:text-[#f68b1e] p-2 rounded-md font-medium cursor-pointer;
+  }
+  .footer {
+    @apply bg-[#535357] text-white h-screen w-full;
   }
 }
 
@@ -90,4 +100,58 @@ header {
   align-items: center;
   padding: 0.5rem 5%;
   background-color: #f1f1f2;
+}
+
+main {
+  background-image: url("./assets/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #a3a3a6;
+}
+
+.search-icon {
+  padding: 15px;
+}
+
+.search-text {
+  flex-grow: 100;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search-text:focus {
+  box-shadow: none;
+  background-color: none;
+}
+
+.nav-search-btn {
+  background-color: #f68b1e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  margin-left: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+.nav-search-btn:hover {
+  background-color: #e07e1b;
+}
+
+.nav-dropdown-btn > *:not(:last-child) {
+  margin-right: 10px;
 }
