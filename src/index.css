@@ -15,10 +15,13 @@
     @apply flex justify-between items-center;
   }
   .nav-dropdown-btn {
-    @apply flex justify-between hover:text-[#f68b1e] p-2 rounded-md font-medium cursor-pointer;
+    @apply flex justify-between items-center hover:text-[#f68b1e] p-2 rounded-md font-medium cursor-pointer;
   }
   .footer {
     @apply bg-[#535357] text-white h-screen w-full;
+  }
+  .category-list {
+    @apply text-xs text-left p-2;
   }
 }
 
@@ -106,8 +109,10 @@ main {
   background-image: url("./assets/main-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: initial;
   min-height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .search-form {
@@ -154,4 +159,28 @@ main {
 
 .nav-dropdown-btn > *:not(:last-child) {
   margin-right: 10px;
+}
+
+.nav-dropdown-btn > i {
+  font-size: 1.3rem;
+}
+.nav-dropdown-btn > .fi-bs-angle-down {
+  font-size: 0.7rem;
+}
+
+.category-list > li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-list > li:hover {
+  color: #f68b1e;
+}
+.category-list > li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.category-list > li > i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
 }

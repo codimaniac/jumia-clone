@@ -11,7 +11,7 @@ function NavDropDownBtn({ icon, btnValue, isDropDown }: Props) {
     <div className="nav-dropdown-btn">
       {icon}
       <span>{btnValue}</span>
-      {isDropDown && <i className="bi bi-chevron-down"></i>}
+      {isDropDown && <i className="fi fi-bs-angle-down"></i>}
     </div>
   );
 }

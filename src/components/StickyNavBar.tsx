@@ -19,17 +19,17 @@ function StickyNavBar() {
         <input type="submit" value="Search" className="nav-search-btn" />
       </form>
       <NavDropDownBtn
-        icon={<i className="bi bi-person"></i>}
+        icon={<i className="fi fi-bs-user"></i>}
         btnValue="Account"
         isDropDown={true}
       />
       <NavDropDownBtn
-        icon={<i className="bi bi-question-circle"></i>}
+        icon={<i className="fi fi-bs-interrogation"></i>}
         btnValue="Help"
         isDropDown={true}
       />
       <NavDropDownBtn
-        icon={<i className="bi bi-cart3"></i>}
+        icon={<i className="fi fi-rs-shopping-cart"></i>}
         btnValue="Cart"
         isDropDown={false}
       />
